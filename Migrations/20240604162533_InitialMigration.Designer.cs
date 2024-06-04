@@ -11,7 +11,7 @@ using WaterWatchMap.Contexts;
 namespace WaterWatchMap.Migrations
 {
     [DbContext(typeof(DataContex))]
-    [Migration("20240604123945_InitialMigration")]
+    [Migration("20240604162533_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -41,8 +41,8 @@ namespace WaterWatchMap.Migrations
                     b.Property<string>("Neighbourhood")
                         .HasColumnType("text");
 
-                    b.Property<int>("SuburbGroup")
-                        .HasColumnType("integer");
+                    b.Property<string>("SuburbGroup")
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 

@@ -38,8 +38,8 @@ namespace WaterWatchMap.Migrations
                     b.Property<string>("Neighbourhood")
                         .HasColumnType("text");
 
-                    b.Property<int>("SuburbGroup")
-                        .HasColumnType("integer");
+                    b.Property<string>("SuburbGroup")
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 

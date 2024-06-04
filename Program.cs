@@ -1,5 +1,6 @@
 using WaterWatchMap.Contexts;
 using Microsoft.EntityFrameworkCore;
+using WaterWatchMap.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,8 @@ builder.Services.AddDbContext<DataContex>(options => options.UseNpgsql(
 ));
 
 builder.Services.AddScoped<DataContextInterface>(provider => provider.GetService<DataContex>());
+
+builder.Services.AddScoped<WaterConsumptionRepositoryInterface, WaterConsumptionRepository>();
 
 builder.Services.AddControllersWithViews();
 

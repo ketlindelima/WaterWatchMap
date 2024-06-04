@@ -134,3 +134,4 @@ D:\PROJETOS\DotNet\WaterWatchMap\obj\Debug\net8.0\refint\WaterWatchMap.dll
 D:\PROJETOS\DotNet\WaterWatchMap\obj\Debug\net8.0\WaterWatchMap.pdb
 D:\PROJETOS\DotNet\WaterWatchMap\obj\Debug\net8.0\WaterWatchMap.genruntimeconfig.cache
 D:\PROJETOS\DotNet\WaterWatchMap\obj\Debug\net8.0\ref\WaterWatchMap.dll
+D:\PROJETOS\DotNet\WaterWatchMap\bin\Debug\net8.0\Newtonsoft.Json.dll

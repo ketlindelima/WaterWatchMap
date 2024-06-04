@@ -18,7 +18,7 @@ namespace WaterWatchMap.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Neighbourhood = table.Column<string>(type: "text", nullable: true),
-                    SuburbGroup = table.Column<int>(type: "integer", nullable: false),
+                    SuburbGroup = table.Column<string>(type: "text", nullable: true),
                     AvarageMonthlyKL = table.Column<int>(type: "integer", nullable: false),
                     Coordinates = table.Column<string>(type: "text", nullable: true)
                 },

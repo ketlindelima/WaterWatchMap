@@ -6,7 +6,7 @@ using WaterWatchMap.Models;
 
 namespace WaterWatchMap.Repositories
 {
-    public interface WaterWatchRepositoryInterface
+    public interface WaterConsumptionRepositoryInterface
     {
         Task<IEnumerable<WaterConsumption>> GetAll();
         Task<IEnumerable<WaterConsumption>> GetTopTenConsumers();
