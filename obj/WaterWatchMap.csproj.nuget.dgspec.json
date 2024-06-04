@@ -1,25 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DotNet\\WaterWatchMap\\WaterWatchMap.csproj": {}
+    "D:\\PROJETOS\\DotNet\\WaterWatchMap\\WaterWatchMap.csproj": {}
   },
   "projects": {
-    "D:\\DotNet\\WaterWatchMap\\WaterWatchMap.csproj": {
+    "D:\\PROJETOS\\DotNet\\WaterWatchMap\\WaterWatchMap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DotNet\\WaterWatchMap\\WaterWatchMap.csproj",
+        "projectUniqueName": "D:\\PROJETOS\\DotNet\\WaterWatchMap\\WaterWatchMap.csproj",
         "projectName": "WaterWatchMap",
-        "projectPath": "D:\\DotNet\\WaterWatchMap\\WaterWatchMap.csproj",
-        "packagesPath": "C:\\Users\\Ketlin\\.nuget\\packages\\",
-        "outputPath": "D:\\DotNet\\WaterWatchMap\\obj\\",
+        "projectPath": "D:\\PROJETOS\\DotNet\\WaterWatchMap\\WaterWatchMap.csproj",
+        "packagesPath": "C:\\Users\\ketlin\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJETOS\\DotNet\\WaterWatchMap\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ketlin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ketlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\ketlin\\AppData\\Local\\Esri\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,6 +50,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

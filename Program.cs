@@ -1,6 +1,16 @@
+using WaterWatchMap.Contexts;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<DataContex>(options => options.UseNpgsql(
+    builder.Configuration.GetConnectionString("DefaultConnection")
+));
+
+builder.Services.AddScoped<DataContextInterface>(provider => provider.GetService<DataContex>());
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

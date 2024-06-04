@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WaterWatchMap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe626ac4efd46d3a8c5ebd0ea757479c5c3e6856")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45f3b19c0e0db275edfbaeb56df6b17334ab75d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("WaterWatchMap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WaterWatchMap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
