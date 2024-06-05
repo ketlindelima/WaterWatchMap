@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WaterWatchMap</title>
     <link rel="stylesheet" href="~/app/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/app/font-awesome/css/font-awasome.min.css" />
-    <link rel="stylesheet" href="~/app/Ionicons/css/AdminLTE.min.css"/>
-    <link rel="stylesheet" href="~/app/Ioicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="~/app/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/app/Ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="~/app/admin/css/AdminLTE.min.css"/>
     <link rel="stylesheet" href="~/app/admin/css/skins/_all-skins.min.css" />
     <link rel="stylesheet" href="~/app/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" />
 
@@ -38,22 +38,21 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
+                        <ul class="treeview-menu">
+                            <li><a asp-area="" asp-controller="Home" asp-action="Index">Water Consumption (2021)</a></li>
+                        </ul>
                     </li>
 
                 </ul>
             </section>
         </aside>
-        <div class="container">
-            <main role="main" class="pb-3">
+        
+        <div class="content-wrapper">
+            <section class="content-fluid">
                 @RenderBody()
-            </main>
+            </section>
         </div>
     
-        <footer class="border-top footer text-muted">
-            <div class="container">
-                &copy; 2024 - WaterWatchMap - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            </div>
-        </footer>
     </div>    
     <script src="~/app/jquery-ui/jquery-ui.min.js"></script>
     <script>$.widget.bridge('uibutton', $.ui.button);</script>
